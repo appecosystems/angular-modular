@@ -1,0 +1,5 @@
+<div ui-view="navigation" class="col-sm-3 col-md-2 sidebar" id="navigation">
+  <ul class="nav nav-sidebar" ng-repeat="navItem in sidebar.navItems">
+    <li ng-class="{active: $state.includes('{{navItem.state}}')}"><a ui-sref="{{navItem.state}}">{{navItem.title}} <i class="{{navItem.cssClass}}"></i></a></li>
+  </ul>
+</div>
